@@ -1,0 +1,33 @@
+.nav-custom {
+    /*position: fixed;*/
+    z-index: 1;
+    /*top: 0;*/
+    background-color: #0067c5;
+    color: white;
+    width: 100%;
+}
+.nav-custom a {
+    color: white;
+}
+@media (min-width: 1200px){
+    img .topnavBrand {
+        height: 65px;
+        width: auto;
+    }
+}
+
+header {
+    background-color: #0067c5;
+}
+
+@media (min-width: 768px){
+    img.topnavBrand {
+        height: 46px;
+        width: auto;
+    }
+}
+
+.personal-image {
+    height: 219px;
+    width: 155px;
+}
