@@ -31,3 +31,7 @@ header {
     height: 219px;
     width: 155px;
 }
+.personal-description {
+    display: block;
+    font-size: 20px;
+}
