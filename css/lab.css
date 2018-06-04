@@ -11,8 +11,9 @@
 }
 @media (min-width: 1200px){
     img .topnavBrand {
-        height: 65px;
-        width: auto;
+        /*height: 65px;
+        width: auto;*/
+        max-width: 250px;
     }
 }
 
@@ -22,8 +23,9 @@ header {
 
 @media (min-width: 768px){
     img.topnavBrand {
-        height: 46px;
-        width: auto;
+        /*height: 46px;
+        width: auto;*/
+        max-width: 250px;
     }
 }
 
