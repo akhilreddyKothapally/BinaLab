@@ -5,13 +5,13 @@
     ngApp.controller('homeController', ['$scope','$http', function($scope,$http){
     	
     	$scope.init = function() {
-	    	$http.get("../json/home.json").success($scope.bindhomeJson.bind($scope));	
+	    	$http.get("./json/home.json").then($scope.bindhomeJson.bind($scope));	
     	};
 
     	$scope.bindhomeJson = function( root ) {
     		$scope.items = [];
     		if ( root ) {
-    			$scope.items = root;
+    			$scope.items = root.data;
     			console.log($scope.items);
     		}
     		if ( !$scope.$$phase ) {

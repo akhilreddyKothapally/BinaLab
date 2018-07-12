@@ -26,24 +26,12 @@
                     </a>
                 </div>
                 <div class="col">
-                    <h3>Bina lab</h3>
+                    <h3>{{items.home.title}}</h3>
                 </div>
             </div>
             <ul class="nav nav-tabs nav-fill nav-custom" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><h5>Home</h5></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="cv-tab" data-toggle="tab" href="#cv" role="tab" aria-controls="cv" aria-selected="false"><h5>Curriculum Vitae</h5></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="research-tab" data-toggle="tab" href="#research" role="tab" aria-controls="research" aria-selected="false"><h5>Research</h5></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="teaching-tab" data-toggle="tab" href="#teaching" role="tab" aria-controls="teaching" aria-selected="false"><h5>Teaching</h5></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="publication-tab" data-toggle="tab" href="#publication" role="tab" aria-controls="publication" aria-selected="false"><h5>Publication</h5></a>
+                <li class="nav-item" ng-repeat="item in items.tabs">
+                    <a class="nav-link" id={{item.id}} data-toggle="tab" href={{item.href}} role="tab" aria-controls={{item.controls}} aria-selected={{item.selected}} ng-class="item.name == 'Home' ? 'active':''"><h5>{{item.name}}</h5></a>
                 </li>
             </ul>
         </header>
@@ -54,7 +42,7 @@
                     <h3>
                         Home
                     </h3>
-                    <img class="personal-image" src="images/junfei.jpg" >
+                    <img class="personal-image" src="images/junfei.JPG" >
                     <span class="personal-description"><b>
                         Assistant Professor<br>
                         Department of Computing Science</br>

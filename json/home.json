@@ -1,5 +1,39 @@
 {
 	"home" : {
 		"title" : "BINA lab"
-	}
+	},
+	"tabs" : [ {
+			"name" : "Home",
+			"id" : "home-tab",
+			"href" : "#home", 
+			"controls":"home", 
+			"selected":"true" },
+		{
+			"name" : "Curriculam Vitae",
+			"id" : "cv-tab",
+			"href" : "#cv", 
+			"controls":"cv", 
+			"selected":"false"
+		} ,
+		{
+			"name" : "Research",
+			"id" : "research-tab",
+			"href" : "#research", 
+			"controls":"research", 
+			"selected":"false"
+		} ,
+		{
+			"name" : "Teaching",
+			"id" : "teaching-tab",
+			"href" : "#teaching", 
+			"controls":"teaching", 
+			"selected":"false"
+		} ,
+		{
+			"name" :  "Publication",
+			"id" : "publication-tab",
+			"href" : "#publication", 
+			"controls":"publication", 
+			"selected":"false"
+		} ]
 }
