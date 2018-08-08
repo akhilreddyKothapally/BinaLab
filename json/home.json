@@ -35,5 +35,36 @@
 			"href" : "#publication", 
 			"controls":"publication", 
 			"selected":"false"
-		} ]
+		} ],
+	"content" : {
+		"home" : ["Assistant Professor","Department of Computing Science","Texas A & M University - Corpus Christi","Office: CI 327","Phone: (361) 825-3622"],
+		"cv" : {
+			"education" : ["Ph.D., Computer Science and Engineering, University of North Texas (UNT), August 2016", 
+							"M.S., Electrical Engineering, UNT, December 2013", 
+							"B.S., Electrical Engineering, University of Electronic Science and Technology of China (UESTC), July 2012"], 
+			"workexperience" : [ "Assistant Professor, Texas A & M University - Corpus Christi (TAMUCC), August 2016 - present",
+								"Guest Researcher, National Institute of Standards and Technology, May 2016 - June 2016", 
+								"Teaching Fellow, Department of Electrical Engineering, UNT, January 2016 - May 2016",
+								"Research Assistant, Department of Electrical Engineering, UNT, 2013 - 2015",
+								"Contributive Intern, Sabre, May 2015 - August 2015" ],
+			"awards" : [	"Wanda J. Shafer Graduate Scholarship, WTS, 2015",
+							"Master's and Doctoral Fellowship, UNT, 2012-2014",
+							"College of Engineering Annual Scholarship, UNT, 2014-2015",
+							"Graduate Assistantship Tuition Scholarship, UNT, 2014-2015",
+							"Top 10 @ UNT Sherman Barsanti Inspiration Awards, 2014",
+							"The best poster presentation in AIAA Workshop on “Airborne Networks and Communications”, Aug. 2013",
+							"2nd place at IEEE Fort Worth MetroCon Student Poster Competition, 2014",
+							"People's First-Class Scholarship, UESTC, 2011",
+							"The Sumsung Scholarship, UESTC, 2010",
+							"The Fangu Top Scholarship, UESTC, 2009",
+							"Travel Grant awarded by 2016 CRA-W Grad Cohort Workshop, 2016",
+							"NSF CPS Week 2015 Student Travel Awards, NSF, 2015",
+							"Graduate Travel Grant Award, UNT, Spring2013, Fall2013, Fall2014, Spring2016",
+							"Travel Grant awarded by 'Introduction to GENI Workshop', 2014",
+							"CENG Graduate Student Travel Fund, 2014",
+							"MILCOM Travel Grant Award, 2013",
+							"Travel Grant awarded by AIAA Workshop on 'Airborne Networks and Communications', 2013"],
+			"activities" : {}
+		}
+	}
 }

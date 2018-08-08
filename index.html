@@ -6,14 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Akhil Reddy Kothapally">
 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript" src="script/lab.js"></script>
+
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/lab.css">
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script type="text/javascript" src="script/lab.js"></script>
 
 </head>
 <body class="container" ng-app="ngApp" class="ng-scope">
@@ -44,47 +46,27 @@
                     </h3>
                     <img class="personal-image" src="images/junfei.JPG" >
                     <span class="personal-description"><b>
+                        <span ng-repeat="text in items.content.home">{{text}}</br></span></b>
+                    <!--<b>
                         Assistant Professor<br>
                         Department of Computing Science</br>
                         Texas A &amp; M University - Corpus Christi</br>
                         Office: CI 327</br>
-                        Phone: (361) 825-3622<br/></b>
+                        Phone: (361) 825-3622<br/></b>-->
                     </span>
                 </div>
                 <div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="cv-tab">
                     <h3>Education</h3>
                     <ul>
-                        <li>Ph.D., Computer Science and Engineering, University of North Texas (UNT), August 2016</li>
-                        <li>M.S., Electrical Engineering, UNT, December 2013</li>
-                        <li>B.S., Electrical Engineering, University of Electronic Science and Technology of China (UESTC), July 2012</li>
+                        <li ng-repeat="education in items.content.cv.education">{{education}}</li>
                     </ul>
                     <h3>Working Experience</h3>
                     <ul>
-                        <li>Assistant Professor, Texas A &amp; M University - Corpus Christi (TAMUCC), August 2016 - present</li>
-                        <li>Guest Researcher, National Institute of Standards and Technology, May 2016 - June 2016</li>
-                        <li>Teaching Fellow, Department of Electrical Engineering, UNT, January 2016 - May 2016</li>
-                        <li>Research Assistant, Department of Electrical Engineering, UNT, 2013 - 2015</li>
-                        <li>Contributive Intern, Sabre, May 2015 - August 2015</li>
+                        <li ng-repeat="workexperience in items.content.cv.workexperience">{{workexperience}}</li>
                     </ul>
                     <h3>Awards</h3>
                     <ul>
-                        <li>Wanda J. Shafer Graduate Scholarship, WTS, 2015</li>
-                        <li>Master's and Doctoral Fellowship, UNT, 2012-2014</li>
-                        <li>College of Engineering Annual Scholarship, UNT, 2014-2015</li>
-                        <li>Graduate Assistantship Tuition Scholarship, UNT, 2014-2015</li>
-                        <li>Top 10 @ UNT Sherman Barsanti Inspiration Awards, 2014</li>
-                        <li>The best poster presentation in AIAA Workshop on “Airborne Networks and Communications”, Aug. 2013</li>
-                        <li>2nd place at IEEE Fort Worth MetroCon Student Poster Competition, 2014</li>
-                        <li>People's First-Class Scholarship, UESTC, 2011</li>
-                        <li>The Sumsung Scholarship, UESTC, 2010</li>
-                        <li>The Fangu Top Scholarship, UESTC, 2009</li>
-                        <li>Travel Grant awarded by 2016 CRA-W Grad Cohort Workshop, 2016</li>
-                        <li>NSF CPS Week 2015 Student Travel Awards, NSF, 2015</li>
-                        <li>Graduate Travel Grant Award, UNT, Spring2013, Fall2013, Fall2014, Spring2016</li>
-                        <li>Travel Grant awarded by "Introduction to GENI Workshop", 2014</li>
-                        <li>CENG Graduate Student Travel Fund, 2014</li>
-                        <li>MILCOM Travel Grant Award, 2013</li>
-                        <li>Travel Grant awarded by AIAA Workshop on “Airborne Networks and Communications", 2013</li>
+                        <li ng-repeat="awards in items.content.cv.awards">{{awards}}</li>
                     </ul>
                     <h3>Professional Activities</h3>
                     <ul>
